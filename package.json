@@ -4,6 +4,7 @@
   "description": "Typescript project template to start a back-end application with CS3 Marketing.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": true,
   "files": [
     "dist/**/*"
   ],
