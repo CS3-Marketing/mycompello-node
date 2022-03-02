@@ -1,21 +1,6 @@
 {
-  "root": true,
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": "./",
-    "sourceType": "module",
-    "ecmaVersion": 2020
-  },
-  "extends": [
-    "airbnb-base",
-    "airbnb-typescript/base",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "rules": {
-    "no-console": "off",
-    "@typescript-eslint/object-curly-spacing": "off"
+    "project": "./tsconfig.json"
   }
 }
