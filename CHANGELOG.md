@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CS3-Marketing/typescript-template/compare/v1.0.0...v1.1.0) (2022-03-03)
+
+
+### Features
+
+* **docker:** Added Docker & VS-Code Remote Explorer Config ([#3](https://github.com/CS3-Marketing/typescript-template/issues/3)) ([e6e3646](https://github.com/CS3-Marketing/typescript-template/commit/e6e364632448d7831b990dff2a2ca5ad9f6ff083))
+
 # 1.0.0 (2022-03-02)
 
 
