@@ -1,13 +1,14 @@
 FROM node:16
 
-WORKDIR /usr/src/app
+RUN apt-get update && apt-get install gnupg2 -y
 
-ENV NODE_ENV development
+RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
+
+WORKDIR /home/node/app
 
 COPY package.json ./
-
 COPY . .
 
-RUN yarn && yarn run build
+RUN yarn
 
-CMD [ "yarn", "start" ]
+USER node
