@@ -22,6 +22,10 @@
     "DavidAnson.vscode-markdownlint",
     "GitHub.copilot"
   ],
+  "features": {
+    "git": "latest",
+    "github-cli": "latest"
+  },
   "remoteUser": "node",
-  "postStartCommand": "ssh-add ~/.ssh/id_rsa"
+  "postCreateCommand": "sudo chown node node_modules && ssh-add ~/.ssh/id_rsa && yarn install"
 }

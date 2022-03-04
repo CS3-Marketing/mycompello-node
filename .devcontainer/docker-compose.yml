@@ -9,4 +9,8 @@ services:
       - ../:/workspace:cached
       - ~/.ssh:/home/node/.ssh
       - ~/.gitconfig:/home/node/.gitconfig
+      - node-node_modules:/workspace/node_modules
     command: /bin/sh -c "while sleep 1000; do :; done"
+
+volumes:
+  node-node_modules:
