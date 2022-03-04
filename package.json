@@ -1,6 +1,6 @@
 {
   "name": "typescript-boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Typescript project template to start a back-end application with CS3 Marketing.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

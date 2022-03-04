@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CS3-Marketing/typescript-template/compare/v1.1.0...v1.1.1) (2022-03-04)
+
+
+### Bug Fixes
+
+* **docker:** Update DockerDev ([#4](https://github.com/CS3-Marketing/typescript-template/issues/4)) ([cf4038f](https://github.com/CS3-Marketing/typescript-template/commit/cf4038fc911dc52ddac13cc892676378e5ee0fc4))
+
 # [1.1.0](https://github.com/CS3-Marketing/typescript-template/compare/v1.0.0...v1.1.0) (2022-03-03)
 
 
