@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CS3-Marketing/typescript-template/compare/v1.1.1...v1.2.0) (2022-03-04)
+
+
+### Features
+
+* **docker:** Improve container performance ([7ff302e](https://github.com/CS3-Marketing/typescript-template/commit/7ff302e21ab5b6a763c16c052ef76180d67da5ba))
+
 ## [1.1.1](https://github.com/CS3-Marketing/typescript-template/compare/v1.1.0...v1.1.1) (2022-03-04)
 
 
