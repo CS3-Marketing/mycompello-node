@@ -1,0 +1,13 @@
+.github/*
+.vscode/*
+.husky/*
+coverage/*
+dist/*
+.env*
+.eslintignore
+.prettierignore
+.gitignore
+.dockerignore
+yarn.lock
+Dockerfile
+README.md
