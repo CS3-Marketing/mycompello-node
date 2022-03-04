@@ -1,10 +1,8 @@
 {
   "name": "Typescript Template",
-
-  "dockerComposeFile": "../docker-compose.dev.yml",
+  "dockerComposeFile": ["docker-compose.yml"],
   "service": "app",
-  "remoteUser": "node",
-  "workspaceFolder": "/workspace/app",
+  "workspaceFolder": "/workspace",
   "settings": {
     "workbench.colorTheme": "GitHub Dark",
     "terminal.integrated.defaultProfile.linux": "bash"
@@ -24,5 +22,6 @@
     "DavidAnson.vscode-markdownlint",
     "GitHub.copilot"
   ],
+  "remoteUser": "node",
   "postStartCommand": "ssh-add ~/.ssh/id_rsa"
 }

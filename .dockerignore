@@ -1,0 +1,22 @@
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose.dev.yml
+
+# dependencies
+node_modules
+
+# coverage
+coverage
+
+# distribution
+.next
+
+# enviroment
+.env*
+
+# git/github
+.github
+.git
+.gitignore
+.husky

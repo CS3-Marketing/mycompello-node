@@ -3,8 +3,5 @@ version: '3.9'
 services:
   app:
     build:
-      context: ./
+      context: .
       dockerfile: Dockerfile
-    user: root
-    command: >
-      bash -c "yarn build && yarn start"

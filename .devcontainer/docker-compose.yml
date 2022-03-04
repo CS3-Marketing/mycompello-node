@@ -1,12 +1,12 @@
 version: '3.9'
-
 services:
   app:
+    user: node
     build:
-      context: ./
+      context: .
       dockerfile: Dockerfile
     volumes:
-      - ./:/workspace/app
+      - ../:/workspace:cached
       - ~/.ssh:/home/node/.ssh
       - ~/.gitconfig:/home/node/.gitconfig
     command: /bin/sh -c "while sleep 1000; do :; done"
