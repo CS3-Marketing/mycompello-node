@@ -17,13 +17,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 14
       - name: Install dependencies
         run: npm install
       - name: Test
-        run: npm run test
+        run: npm test
       - name: Build
-        run: npm run build
+        run: npm build
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

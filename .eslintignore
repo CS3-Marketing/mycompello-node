@@ -2,3 +2,4 @@
 **/*.css
 **/*.mdx
 dist/**/*
+.DS_Store
