@@ -68,7 +68,7 @@ export default class MyCompello {
    */
   public async get(
     remotePath: string,
-    localPath: string | NodeJS.WritableStream | undefined,
+    localPath?: string | NodeJS.WritableStream | undefined,
     options?: SftpClient.TransferOptions,
   ): Promise<string | Buffer | NodeJS.WritableStream> {
     const client = await this.connect();
@@ -81,11 +81,16 @@ export default class MyCompello {
    * Downloads a file at path to dst using parallel reads for faster throughput
    * @param remotePath {string}
    * @param localPath {string}
+   * @param options {SftpClient.TransferOptions | undefined}
    * @returns {Promise<string>}
    */
-  public async fastGet(remotePath: string, localPath: string): Promise<string> {
+  public async fastGet(
+    remotePath: string,
+    localPath: string,
+    options?: SftpClient.FastGetTransferOptions,
+  ): Promise<string> {
     const client = await this.connect();
-    const file = await client.fastGet(remotePath, localPath);
+    const file = await client.fastGet(remotePath, localPath, options);
     client.end();
     return file;
   }
@@ -255,12 +260,5 @@ export default class MyCompello {
     const result = await client.downloadDir(remotePath, localPath, filter);
     client.end();
     return result;
-  }
-
-  /**
-   * Terminate the connection to the remote server.
-   */
-  public async end(): Promise<void> {
-    this.client.end();
   }
 }
