@@ -1,4 +1,4 @@
-name: Deploy
+name: Publish Release
 
 on:
   release:
@@ -11,8 +11,10 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 14
           registry-url: https://registry.npmjs.org/
-      - run: yarn
-      - run: yarn build
-      # DEPLOYMENT STEP HERE
+      - run: npm install
+      - run: npm run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
