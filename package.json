@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CS3-Marketing/typescript-template.git"
+    "url": "git+https://github.com/CS3-Marketing/mycompello-node.git"
   },
   "author": "CS3 Marketing <support@cs3marketing.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CS3-Marketing/typescript-template/issues"
+    "url": "https://github.com/CS3-Marketing/mycompello-node/issues"
   },
-  "homepage": "https://github.com/CS3-Marketing/typescript-template#readme",
+  "homepage": "https://github.com/CS3-Marketing/mycompello-node#readme",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
