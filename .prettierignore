@@ -10,5 +10,8 @@ dist/*
 .dockerignore
 yarn.lock
 Dockerfile
-README.md
 .DS_Store
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+LICENSE
+README.md
