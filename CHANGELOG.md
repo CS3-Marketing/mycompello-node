@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CS3-Marketing/mycompello-node/compare/v1.1.0...v1.1.1) (2022-03-08)
+
+
+### Bug Fixes
+
+* **deps:** Remove unused dep ([#7](https://github.com/CS3-Marketing/mycompello-node/issues/7)) ([4dc04b6](https://github.com/CS3-Marketing/mycompello-node/commit/4dc04b617bc2310e8b38159d6c3cd89fcae1bf5d))
+
 # [1.1.0](https://github.com/CS3-Marketing/mycompello-node/compare/v1.0.1...v1.1.0) (2022-03-08)
 
 
