@@ -1,6 +1,6 @@
 {
   "name": "mycompello",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "An SFTP Client built around SSH2 to interact with a remote server",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

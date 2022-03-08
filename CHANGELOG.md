@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CS3-Marketing/mycompello-node/compare/v1.0.1...v1.1.0) (2022-03-08)
+
+
+### Features
+
+* **tests:** Add Unit tests ([#6](https://github.com/CS3-Marketing/mycompello-node/issues/6)) ([1a7a9ea](https://github.com/CS3-Marketing/mycompello-node/commit/1a7a9eaf4b237d1ff2e37a3a50c07e84ab6432f4))
+
 ## [1.0.1](https://github.com/CS3-Marketing/mycompello-node/compare/v1.0.0...v1.0.1) (2022-03-07)
 
 
