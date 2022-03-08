@@ -22,6 +22,5 @@
     "noUnusedLocals": true,
     "suppressImplicitAnyIndexErrors": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", ".vscode", ".github", "dist", "coverage"]
+  "include": ["src/**/*.ts"]
 }

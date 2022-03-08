@@ -1,10 +1,8 @@
 # mycompello-node
 
-> An SFTP Client built around SSH2 to interact with a remote server.
+A wrapper library built on top of [ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client)
 
-## Overview
-
-This library is built on top of the [ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client). It provides a simple interface to interact with a remote server via SFTP.
+[![npm version](https://badge.fury.io/js/mycompello.svg)](https://badge.fury.io/js/mycompello)
 
 ## Installation
 

@@ -1,12 +1,22 @@
 import SftpClient from 'ssh2-sftp-client';
 
-export interface ClientOptions {
+interface ClientOptions {
   host: string;
   port: number;
   username: string;
   password: string;
 }
 
+/**
+ * @class MyCompello
+ * @classdesc The MyCompello class is a wrapper for the SFTP client.
+ * It provides the ability to read and write files to a SFTP server.
+ * @arg {ClientOptions} config - The SFTP client options.
+ * @arg {String} config.host - The SFTP server hostname.
+ * @arg {Number} config.port - The SFTP server port.
+ * @arg {String} config.username - The SFTP server username.
+ * @arg {String} config.password - The SFTP server password.
+ */
 export default class MyCompello {
   private client: SftpClient;
 
@@ -97,18 +107,18 @@ export default class MyCompello {
 
   /**
    * Uploads a file to path
-   * @param localPath {string | Buffer | NodeJS.ReadableStream}
+   * @param input {string | Buffer | NodeJS.ReadableStream}
    * @param remotePath {string}
    * @param options {SftpClient.TransferOptions | undefined}
    * @returns {Promise<string | Buffer | NodeJS.ReadableStream>}
    */
   public async put(
-    localPath: string | Buffer | NodeJS.ReadableStream,
+    input: string | Buffer | NodeJS.ReadableStream,
     remotePath: string,
     options?: SftpClient.TransferOptions,
   ): Promise<string | Buffer | NodeJS.ReadableStream> {
     const client = await this.connect();
-    const file = await client.put(localPath, remotePath, options);
+    const file = await client.put(input, remotePath, options);
     client.end();
     return file;
   }
