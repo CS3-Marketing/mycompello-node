@@ -53,7 +53,7 @@ export default class MyCompello {
   public async list(remotePath: string): Promise<SftpClient.FileInfo[]> {
     const client = await this.connect();
     const files = await client.list(remotePath);
-    client.end();
+    await client.end();
     return files;
   }
 
@@ -65,7 +65,7 @@ export default class MyCompello {
   public async exists(remotePath: string): Promise<string | boolean> {
     const client = await this.connect();
     const exists = await client.exists(remotePath);
-    client.end();
+    await client.end();
     return exists;
   }
 
@@ -83,7 +83,7 @@ export default class MyCompello {
   ): Promise<string | Buffer | NodeJS.WritableStream> {
     const client = await this.connect();
     const file = await client.get(remotePath, localPath, options);
-    client.end();
+    await client.end();
     return file;
   }
 
@@ -101,7 +101,7 @@ export default class MyCompello {
   ): Promise<string> {
     const client = await this.connect();
     const file = await client.fastGet(remotePath, localPath, options);
-    client.end();
+    await client.end();
     return file;
   }
 
@@ -119,7 +119,7 @@ export default class MyCompello {
   ): Promise<string | Buffer | NodeJS.ReadableStream> {
     const client = await this.connect();
     const file = await client.put(input, remotePath, options);
-    client.end();
+    await client.end();
     return file;
   }
 
@@ -137,7 +137,7 @@ export default class MyCompello {
   ): Promise<string | Buffer | NodeJS.ReadableStream> {
     const client = await this.connect();
     const file = await client.fastPut(localPath, remotePath, options);
-    client.end();
+    await client.end();
     return file;
   }
 
@@ -155,7 +155,7 @@ export default class MyCompello {
   ): Promise<string | Buffer | NodeJS.ReadableStream> {
     const client = await this.connect();
     const file = await client.append(input, remotePath, options);
-    client.end();
+    await client.end();
     return file;
   }
 
@@ -168,7 +168,7 @@ export default class MyCompello {
   public async mkdir(remotePath: string, recursive?: boolean): Promise<string> {
     const client = await this.connect();
     const result = await client.mkdir(remotePath, recursive);
-    client.end();
+    await client.end();
     return result;
   }
 
@@ -181,7 +181,7 @@ export default class MyCompello {
   public async rmdir(remotePath: string, recursive?: boolean): Promise<string> {
     const client = await this.connect();
     const result = await client.rmdir(remotePath, recursive);
-    client.end();
+    await client.end();
     return result;
   }
 
@@ -193,7 +193,7 @@ export default class MyCompello {
   public async delete(remotePath: string, noError?: boolean): Promise<string> {
     const client = await this.connect();
     const result = await client.delete(remotePath, noError);
-    client.end();
+    await client.end();
     return result;
   }
 
@@ -206,7 +206,7 @@ export default class MyCompello {
   public async rename(fromPath: string, toPath: string): Promise<string> {
     const client = await this.connect();
     const result = await client.rename(fromPath, toPath);
-    client.end();
+    await client.end();
     return result;
   }
 
@@ -219,7 +219,7 @@ export default class MyCompello {
   public async posixRename(fromPath: string, toPath: string): Promise<string> {
     const client = await this.connect();
     const result = await client.posixRename(fromPath, toPath);
-    client.end();
+    await client.end();
     return result;
   }
 
@@ -232,7 +232,7 @@ export default class MyCompello {
   public async chmod(remotePath: string, mode: string): Promise<string> {
     const client = await this.connect();
     const result = await client.chmod(remotePath, mode);
-    client.end();
+    await client.end();
     return result;
   }
 
@@ -250,7 +250,7 @@ export default class MyCompello {
   ): Promise<string> {
     const client = await this.connect();
     const result = await client.uploadDir(localPath, remotePath, filter);
-    client.end();
+    await client.end();
     return result;
   }
 
@@ -268,7 +268,7 @@ export default class MyCompello {
   ): Promise<string> {
     const client = await this.connect();
     const result = await client.downloadDir(remotePath, localPath, filter);
-    client.end();
+    await client.end();
     return result;
   }
 }
