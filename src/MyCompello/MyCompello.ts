@@ -5,6 +5,7 @@ interface ClientOptions {
   port: number;
   username: string;
   password: string;
+  debug?: boolean;
 }
 
 /**
@@ -38,6 +39,7 @@ export default class MyCompello {
         port: this.config.port,
         username: this.config.username,
         password: this.config.password,
+        debug: this.config.debug ? console.log : undefined,
       })
       .catch((err: Error) => {
         throw err;
