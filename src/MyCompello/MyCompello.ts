@@ -1,11 +1,18 @@
 import SftpClient from 'ssh2-sftp-client';
-import { ConnectConfig } from 'ssh2';
+
+interface ClientOptions {
+  host: string;
+  port: number;
+  username: string;
+  password: string;
+  debug?: boolean;
+}
 
 /**
  * @class MyCompello
  * @classdesc The MyCompello class is a wrapper for the SFTP client.
  * It provides the ability to read and write files to a SFTP server.
- * @arg {ConnectConfig} config - The SFTP client options.
+ * @arg {ClientOptions} config - The SFTP client options.
  * @arg {String} config.host - The SFTP server hostname.
  * @arg {Number} config.port - The SFTP server port.
  * @arg {String} config.username - The SFTP server username.
@@ -14,9 +21,9 @@ import { ConnectConfig } from 'ssh2';
 export default class MyCompello {
   private client: SftpClient;
 
-  private config: ConnectConfig;
+  private config: ClientOptions;
 
-  constructor(config: ConnectConfig) {
+  constructor(config: ClientOptions) {
     this.config = config;
     this.client = new SftpClient();
   }
@@ -26,9 +33,17 @@ export default class MyCompello {
    * @returns Promise<SftpClient>
    */
   public async connect(): Promise<SftpClient> {
-    await this.client.connect(this.config).catch((err: Error) => {
-      throw err;
-    });
+    await this.client
+      .connect({
+        host: this.config.host,
+        port: this.config.port,
+        username: this.config.username,
+        password: this.config.password,
+        debug: this.config.debug ? console.log : undefined,
+      })
+      .catch((err: Error) => {
+        throw err;
+      });
     return this.client;
   }
 
