@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CS3-Marketing/mycompello-node/compare/v1.1.2...v1.2.0) (2022-07-23)
+
+
+### Features
+
+* **debug:** Add debug options ([#11](https://github.com/CS3-Marketing/mycompello-node/issues/11)) ([d065896](https://github.com/CS3-Marketing/mycompello-node/commit/d0658960c61dc56843ceef330e85dba9e0a6c68a))
+
 ## [1.1.2](https://github.com/CS3-Marketing/mycompello-node/compare/v1.1.1...v1.1.2) (2022-07-13)
 
 
