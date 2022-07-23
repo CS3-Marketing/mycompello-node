@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/CS3-Marketing/mycompello-node/compare/v1.3.0...v1.3.1) (2022-07-23)
+
+
+### Reverts
+
+* Revert "Update package.json (#14)" (#15) ([b892242](https://github.com/CS3-Marketing/mycompello-node/commit/b892242f9a0e85466ae8b42d1b981f6b48258ab9)), closes [#14](https://github.com/CS3-Marketing/mycompello-node/issues/14) [#15](https://github.com/CS3-Marketing/mycompello-node/issues/15)
+
 # [1.3.0](https://github.com/CS3-Marketing/mycompello-node/compare/v1.2.0...v1.3.0) (2022-07-23)
 
 
