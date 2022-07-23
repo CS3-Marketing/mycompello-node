@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CS3-Marketing/mycompello-node/compare/v1.3.1...v1.4.0) (2022-07-23)
+
+
+### Features
+
+* **ssh2:** Add ssh2 config ([#16](https://github.com/CS3-Marketing/mycompello-node/issues/16)) ([81f9e18](https://github.com/CS3-Marketing/mycompello-node/commit/81f9e1825e6ade3090937699dabffc033de999ec))
+
 ## [1.3.1](https://github.com/CS3-Marketing/mycompello-node/compare/v1.3.0...v1.3.1) (2022-07-23)
 
 
