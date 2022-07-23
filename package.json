@@ -58,7 +58,6 @@
   },
   "dependencies": {
     "@types/ssh2-sftp-client": "^7.1.0",
-    "ssh2": "^1.11.0",
     "ssh2-sftp-client": "^9.0.2"
   }
 }
