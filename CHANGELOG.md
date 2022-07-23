@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CS3-Marketing/mycompello-node/compare/v1.2.0...v1.3.0) (2022-07-23)
+
+
+### Features
+
+* **dependencies:** Upgrade dependencies ([#13](https://github.com/CS3-Marketing/mycompello-node/issues/13)) ([1999eba](https://github.com/CS3-Marketing/mycompello-node/commit/1999ebab018d18aa1a1d53f36d4aeca0a05673c6))
+
 # [1.2.0](https://github.com/CS3-Marketing/mycompello-node/compare/v1.1.2...v1.2.0) (2022-07-23)
 
 
